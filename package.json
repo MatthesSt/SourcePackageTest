@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "name": "source_package_test",
+  "scripts": {
+    "install": "node index.js"
+  }
+}
