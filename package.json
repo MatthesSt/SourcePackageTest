@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.3",
   "name": "source_package_test",
   "scripts": {
     "install": "node index.js"

@@ -1,8 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-const targetPath = process.cwd(); // User's current working directory
-
 // Copy the template folder recursively
 function copyTemplateFiles(source, target) {
   fs.readdirSync(source).forEach((item) => {
@@ -18,5 +16,8 @@ function copyTemplateFiles(source, target) {
   });
 }
 
-copyTemplateFiles("./template", "../../../");
+const templatePath = path.join(__dirname, "template");
+const targetPath = path.join(process.cwd(), "../../"); // User's current working directory
+
+copyTemplateFiles(templatePath, targetPath);
 console.log("Template files copied successfully!");
